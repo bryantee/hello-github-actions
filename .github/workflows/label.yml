@@ -10,8 +10,6 @@ jobs:
 
     if: contains(github.event.pull_request.labels.*.name, 'cool')
 
-    runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v1
       - uses: ./action-a
